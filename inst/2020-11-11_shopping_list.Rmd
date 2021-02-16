@@ -1,8 +1,10 @@
 ---
 title: "R Notebook"
-output: html_notebook
-editor_options: 
-  chunk_output_type: inline
+output:
+  html_document:
+    df_print: paged
+editor_options:
+  chunk_output_type: console
 ---
 
 ```{r setup, include=F}
@@ -14,12 +16,12 @@ knitr::opts_chunk$set(message = F,
 ```{r}
 library(tidyverse)
 
-raw_list <- read_csv('inst/2020-11-11_shopping_list.csv')
+raw_list <- readr::read_csv("inst/shopping_lists/2020-11-11_shopping_list.csv")
 
 shopping_list <- raw_list %>%
   fill(meal) %>%
   arrange(meal) %>%
-  select(category, ingredient, amount) %>% 
+  select(category, item, amount) %>% 
   knitr::kable()
 
 shopping_list

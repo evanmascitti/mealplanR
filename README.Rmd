@@ -25,7 +25,7 @@ Eventually, I would like to make this into an R package that others could use to
 Links to recent shopping lists (must access via [GitHub Pages
 link](https://evanmascitti.github.io/mealplanR/)):
 
-Here is an archive of all past lists:
+Here is an archive of all past lists: <br>
 [2020-11-30](inst/shopping_lists/2020-11-30_shopping_list.html) <br>
 [2020-12-24](inst/shopping_lists/2020-12-24_shopping_list.html) <br>
 [2021-01-11](inst/shopping_lists/2021-01-11_shopping_list.html) <br>
