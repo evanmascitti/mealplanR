@@ -1,4 +1,4 @@
-Package: mealplanR
+Package: mealplanR2
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
@@ -26,6 +26,6 @@ Imports:
     here,
     tibble,
     crayon
-URL: https://github.com/evanmascitti/mealplanR
-BugReports: https://github.com/evanmascitti/mealplanR/issues
+URL: https://github.com/evanmascitti/mealplanR2
+BugReports: https://github.com/evanmascitti/mealplanR2/issues
 RdMacros: lifecycle
