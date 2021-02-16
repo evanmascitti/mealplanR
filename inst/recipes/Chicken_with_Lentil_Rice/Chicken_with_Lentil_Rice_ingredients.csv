@@ -1,0 +1,20 @@
+meal_ID,source,tag1,tag2,tag3,item,quantity,unit,department
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,"whole chicken, 4 lb",1,unit,meat
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,cumin,1,Tbsp,spices
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,cumin,1,tsp,spices
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,unsalted butter,3,Tbsp,dairy
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,yellow onion,2,unit,produce
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,bay leaves,2,unit,spices
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,saffron threads,1,pinch,spices
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,basmati rice,2.5,cup,dry
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,raisins,1,cup,dry
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,Medjool dates,6,unit,dry
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,chicken stock,4.5,cup,dry
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,lentils,0.75,cup,dry
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,mint/dill/parsley/cilantro,0.25,cup,produce
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,yogurt,1.5,cup,dairy
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,raisins,0.5,cup,dairy
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,persian cucumber,1,unit,produce
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,garlic,1,clove,produce
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,toasted walnuts,0.25,cup,dry
+Chicken_with_Lentil_Rice,"Salt, Fat, Acid, Heat p. 334",Persian,chicken,,olive oil,2,Tbsp,dry

@@ -1,0 +1,40 @@
+---
+title: "shopping for Christmas Eve and Christmas Day"
+mainfont: Open Sans
+output:
+  pdf_document:
+    latex_engine: xelatex
+  html_document: default
+date: "2020-12-24"
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F)
+```
+
+```{r}
+library(tidyverse)
+library(mealplanR)
+library(kableExtra)
+library(here)
+
+depts <- read_csv(here('inst', 'shopping_lists', '2020-12-24_shopping_list.csv')) %>% 
+  .$department %>% 
+  unique()
+
+shopping_list <- mealplanR::create_shopping_list(
+  here('inst', 'shopping_lists', '2020-12-24_shopping_list.csv'), lump = T) %>% 
+  mutate(Department = factor(x = Department, levels = c('produce', 'meat', 'dairy', 'frozen', 'hygeine', 'dry', 'spices', 'beer/wine/spirits')) ) %>% 
+  arrange(Department)
+
+shopping_list %>% 
+  kbl() %>% 
+  row_spec(1:9, background= "#B0C4DE") %>%
+  row_spec(14:15, background= "#B0C4DE") %>% 
+  row_spec(19, background= "#B0C4DE") %>%
+  row_spec(24, background= "#B0C4DE") %>%
+  kable_styling()
+
+```

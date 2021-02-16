@@ -1,0 +1,36 @@
+---
+title: "shopping for Haleigh visit"
+output: html_document
+date: "2020-11-30"
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F)
+```
+
+```{r}
+library(tidyverse)
+library(mealplanR)
+library(kableExtra)
+
+depts <- (c("produce", "deli", "meat", "bread", "dairy", "frozen", "dry", "canned", "liquor", "hygeine", "other"))
+
+shopping_list <- mealplanR::create_shopping_list('2020-11-30_shopping_list.csv', lump = T) %>%
+  mutate(Department = fct_relevel(.f = Department, depts)) %>% 
+  arrange(Department) 
+
+shopping_list %>% 
+  kbl() %>% 
+  row_spec(1:8, background= "#B0C4DE") %>% 
+  row_spec(11:13, background= "#B0C4DE") %>% 
+  row_spec(16:23, background= "#B0C4DE") %>% 
+  # row_spec(24:26, background= "#B0C4DE") %>% 
+  row_spec(27:37, background= "#B0C4DE") %>% 
+  row_spec(39:40, background= "#B0C4DE") %>% 
+  row_spec(43, background= "#B0C4DE") %>% 
+  kable_styling()
+
+```
+

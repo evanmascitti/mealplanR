@@ -1,0 +1,22 @@
+---
+title: 'Notes and progress on the package'
+output: html_document
+date: "project initiated 2020-11-11, this document last updated `r Sys.Date()`"
+---
+
+- things I have tried recently.....cropping out the rooster logo from top right corner with **magick**....this won't work because the geometry requires a partial cut in two directons....it can easily be done in Photoshop with the eraser tool.
+
+- also tried running OCR with `magick::image_ocr()` and relying on **tesseract**; this actually got me pretty close but it still has an unacceptable amount of mistakes/errors. I bet if I scan this it will work though. I'll take the recipe cards to the lab later and try on my Brother scanner. 
+
+- some other ideas:
+  - recipes should be stores as a nested tibble. This is a list that can have one recipe per row, and each meal can then contain several columns (including list-columns). Examples of columns to add would be images, an ingredient list, and a character string of directions. These can each be formatted with code, and I could write a template/skeleton .Rmd file that would render a week's worth of recipes using parameters....that could generate a shopping list and a set of recipe sheets showing directions and photos. Cool! The key is to have the data organized correctly. Each meal should have its own csv file and be titled with the exact recipe name...I envision using `use_data_raw()` to build this list as a data object included in the package....this list could be easily built with a command consisting of just a few lines, such as:
+  
+```{r eval=F}
+ecmfuns::gather.files(tabbed_directory = "inst/recipes", filetype = "csv") %>% 
+  purrr::map(read_csv) %>% 
+  tibble::enframe(value= "ingredients")
+```
+
+This would pull in all the files and make a tibble with 2 columns; the name of the recipe and the ingredients for each, held as a list-column of data frames/tibbles. Then the images and directions could be separately imported with similar calls to `magick::image_read()` paired with some joins and mutates. 
+
+- add some functionality for ordering the list....this should be via a call to `fct_reorder()` which allows the user to specify a character vector of departments by which the list should be arranged. Then inside `generate_shopping_list()` add a line that arranges the list by department. This generalizes the function for any store layout....for example, at Wegmans I like to go produce -> deli -> meat -> dairy -> dry -> ethnic -> beer/wine, but not every store is laid out this way. So long as the departments in the user-supplied recipes match those specified in this function, any or all can be ordered as desired. 

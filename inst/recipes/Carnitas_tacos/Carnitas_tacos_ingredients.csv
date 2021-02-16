@@ -1,0 +1,11 @@
+recipe_ID,source,tag1,tag2,tag3,recipe_component,item,quantity,unit,department
+Carnitas_tacos,Personal experience,Mexican,pork,-,extra,sour cream,1,container,dairy
+Carnitas_tacos,Personal experience,Mexican,pork,-,extra,corn tortillas,1,bag,ethnic
+Carnitas_tacos,Personal experience,Mexican,pork,-,salsa,lime,1,unit,produce
+Carnitas_tacos,Personal experience,Mexican,pork,-,salsa,salsa verde,1,jar,ethnic
+Carnitas_tacos,Personal experience,Mexican,pork,-,salsa,jalapeno,1,unit,produce
+Carnitas_tacos,Personal experience,Mexican,pork,-,salsa,tomato,1,unit,produce
+Carnitas_tacos,Personal experience,Mexican,pork,-,extra,iceberg lettuce,1,unit,produce
+Carnitas_tacos,Personal experience,Mexican,pork,-,salsa,red onion,1,unit,produce
+Carnitas_tacos,Personal experience,Mexican,pork,-,meat,pork shoulder,2,lb,meat
+Carnitas_tacos,Personal experience,Mexican,pork,-,salsa,cilantro,1,bunch,produce

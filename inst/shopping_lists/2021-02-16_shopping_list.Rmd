@@ -1,0 +1,42 @@
+---
+title: "Wegmans"
+date: "`r strftime(Sys.Date(), format = '%a, %e %b %Y')`"
+output: html_document
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F)
+```
+
+```{r}
+library(tidyverse)
+library(kableExtra)
+
+recipes_for_this_week <-
+  c("inst/recipes/Chicago_thin_crust_pizza/Chicago_thin_crust_pizza_ingredients.csv", "inst/shopping_lists/2021-02-16_shopping_list.csv") %>% 
+  map(read_csv) %>%
+  reduce(rbind) %>%
+  dplyr::select(recipe_ID, source, dplyr::everything())
+
+this_week <- recipes_for_this_week %>%
+  filter_all(any_vars(!is.na(.))) %>% 
+  mutate(department = as_factor(department)) %>% 
+  mutate(department = fct_relevel(department,
+                                  "produce", "bread", "deli", "meat", "dairy", "frozen", "canned", "dry", "spices")) %>% 
+  arrange(department, item) %>% 
+  rownames_to_column()%>% 
+  select(rowname, department, recipe_ID, quantity, unit, item) %>%
+  arrange(department, item) 
+
+this_week %>%
+  kbl() %>% 
+  row_spec(1:3, background= "#B0C4DE") %>%
+  row_spec(5:8, background= "#B0C4DE") %>% 
+  row_spec(11:14, background= "#B0C4DE") %>%
+  row_spec(18:19, background= "#B0C4DE") %>%
+  row_spec(29:32, background= "#B0C4DE") %>%
+  kable_styling()
+```
+

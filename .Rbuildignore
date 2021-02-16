@@ -1,0 +1,14 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+
+^inst/recipe_images$
+^inst//recipe_images/01_img\.png$
+^inst//recipe_images/01_img_0001\.png$
+^inst//recipe_images/01_recipe\.png$
+^inst//recipe_images/02_img\.png$
+^inst//recipe_images/02_recipe\.png$
+^inst//recipe_images/03_img\.png$
+^inst//recipe_images/03_recipe\.png$
+^inst//recipe_images/04_img\.png$
+^inst//recipe_images/04_recipe\.png$

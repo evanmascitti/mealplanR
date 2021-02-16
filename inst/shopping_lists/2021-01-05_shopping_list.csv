@@ -1,0 +1,17 @@
+meal_ID,tag1,tag2,tag3,item,quantity,unit,department
+staple,-,-,-,popcorn,1,unit,dry
+staple,-,-,-,english muffins,1,bag,bread
+staple,-,-,-,yogurt,2,container,dairy
+staple,-,-,-,brick cheese,3,bricks,dairy
+staple,-,-,-,sliced American cheese,1,bag,dairy
+staple,-,-,-,olives,1,container,deli
+staple,-,-,-,toothbrushes,1,unit,hygeine
+staple,-,-,-,club soda,6,case,liquor
+staple,-,-,-,salad kit,1,unit,produce
+staple,-,-,-,peanut butter,1,jar,dry
+staple,-,-,-,lemons/limes,1,bag,produce
+staple,-,-,-,frozen waffles,2,box,frozen
+staple,-,-,-,BBQ sauce - Bull's Eye or Heinz,1,bottle,dry
+staple,-,-,-,pizza sauce,1,jar,dry
+staple,-,-,-,fresh mozzarella cheese,1,ball,deli
+,,,,,,,

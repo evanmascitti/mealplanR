@@ -1,0 +1,48 @@
+meal_ID,tag1,tag2,tag3,item,quantity,unit,department
+staple,NA,NA,NA,english muffins,1,bag,bread
+Grilled Green Chile Burgers,Tex-Mex,Cook's Country,30min,hamburger buns,4,unit,bread
+Chicken and Cauliflower in Garam Masala Tomato Sauce,Indian,Cook's Country,30min,crushed tomatoes,1,28-oz can,canned
+staple,NA,NA,NA,yogurt,2,container,dairy
+staple,NA,NA,NA,brick cheese,3,bricks,dairy
+staple,NA,NA,NA,sliced American cheese,1,bag,dairy
+Margherita pizza,pizza,,,fresh mozzarella,8,oz,dairy
+Grilled Green Chile Burgers,Tex-Mex,Cook's Country,30min,Monterery Jack cheese,4,oz,dairy
+Grilled Green Chile Burgers,Tex-Mex,Cook's Country,30min,Monterery Jack cheese,4,oz,dairy
+Chicken and Cauliflower in Garam Masala Tomato Sauce,Indian,Cook's Country,30min,heavy cream,0.25,cup,dairy
+Black Bean Burgers,Cook's Country,pre-make,,tortilla chips,1,bag,dry
+Pasta with Broccoli and Bread Crumbs,,,,Parmesean cheese,0.5,cup,dairy
+Autumn pizza,pizza,,,white cheddar cheese,1,cup,dairy
+staple,NA,NA,NA,olives,1,container,deli
+Autumn pizza,pizza,,,brown sugar ham,0.5,lb,deli
+Taco pizza,pizza,,,taco sauce,1,bottle,dry
+Taco pizza,pizza,,,Doritos,1,bag,dry
+Taco pizza,pizza,,,taco seasoning,1,pouch,dry
+staple,NA,NA,NA,coffee,1,unit,dry
+staple,NA,NA,NA,all-purpose flour,5,lb,dry
+Pasta with Broccoli and Bread Crumbs,,,,pasta,1,lb,dry
+Pasta with Broccoli and Bread Crumbs,,,,bread crumbs,0.5,cup,dry
+Autumn pizza,pizza,,,yellow mustard,4,Tablespoon,dry
+Autumn pizza,pizza,,,mayonaise,4,Tablespoon,dry
+Autumn pizza,pizza,,,honey,4,Tablespoon,dry
+Autumn pizza,pizza,,,white vinegar,1,Tablespoon,dry
+staple,NA,NA,NA,frozen waffles,2,box,frozen
+Pasta with Broccoli and Bread Crumbs,pasta,vegetarian,easy,frozen broccoli,2,lb,frozen
+Chicken and Cauliflower in Garam Masala Tomato Sauce,Indian,Cook's Country,30min,frozen mixed vegetables,1,bag,frozen
+staple,NA,NA,NA,razor blades,1,unit,hygeine
+staple,NA,NA,NA,toothbrushes,1,unit,hygeine
+staple,NA,NA,NA,club soda,1,case,liquor
+staple,NA,NA,NA,dry white wine,1,bottle,liquor
+Taco pizza,pizza,,,ground beef,1,lb,meat
+Grilled Green Chile Burgers,Tex-Mex,Cook's Country,30min,ground pork,1,lb,meat
+Chicken and Cauliflower in Garam Masala Tomato Sauce,Indian,Cook's Country,30min,chicken breast,4,unit,meat
+staple,NA,NA,NA,hard surface cleaner,1,unit,other
+staple,NA,NA,NA,salad kit,1,unit,produce
+Pasta with Broccoli and Bread Crumbs,,,,yellow onion,1,unit,produce
+Pasta with Broccoli and Bread Crumbs,,,,garlic,3,cloves,produce
+Grilled Green Chile Burgers,Tex-Mex,Cook's Country,30min,iceberg lettuce,1,head,produce
+Chicken and Cauliflower in Garam Masala Tomato Sauce,Indian,Cook's Country,30min,ginger,2,Tablespoon,produce
+Chicken and Cauliflower in Garam Masala Tomato Sauce,Indian,Cook's Country,30min,onion,1,unit,produce
+Black Bean Burgers,Cook's Country,30min,,avocado,1,unit,produce
+Autumn pizza,pizza,,,Granny Smith apple,1,unit,produce
+Chicken and Cauliflower in Garam Masala Tomato Sauce,Indian,Cook's Country,30min,garam masala,1,Tablespoon,spice
+Autumn pizza,pizza,,,cayenne pepper,0.25,teaspoon,spice

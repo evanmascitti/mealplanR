@@ -1,0 +1,6 @@
+meal_ID,source,tag1,tag2,tag3,item,quantity,unit,department
+Patty_Melts_NYT_cooking,https://cooking.nytimes.com/recipes/1018278-patty-melts,,,,unsalted butter,6,Tbsp,dairy
+Patty_Melts_NYT_cooking,https://cooking.nytimes.com/recipes/1018278-patty-melts,,,,onion,2,"unit, large",produce
+Patty_Melts_NYT_cooking,https://cooking.nytimes.com/recipes/1018278-patty-melts,,,,"ground beef, <= 20% fat",1.5,lb,meat
+Patty_Melts_NYT_cooking,https://cooking.nytimes.com/recipes/1018278-patty-melts,,,,rye bread,8,slices,bread
+Patty_Melts_NYT_cooking,https://cooking.nytimes.com/recipes/1018278-patty-melts,,,,Swiss cheese,8,slices,dairy

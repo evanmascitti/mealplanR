@@ -1,0 +1,17 @@
+meal_ID,tag1,tag2,tag3,item,quantity,unit,department
+staple,-,-,-,english muffins,1,bag,bread
+staple,-,-,-,yogurt,2,container,dairy
+staple,-,-,-,brick cheese,3,bricks,dairy
+staple,-,-,-,sliced American cheese,1,bag,dairy
+staple,-,-,-,olives,1,container,deli
+staple,-,-,-,salad kit,1,unit,produce
+staple,-,-,-,lemons/limes,1,bag,produce
+staple,-,-,-,frozen waffles,1,box,frozen
+staple,-,-,-,Gillette razor and blades,1,unit,hygeine
+staple,-,-,-,whole chicken,1,unit,meat
+staple,-,-,-,Red bell pepper,1,unit,produce
+staple,-,-,-,Sweet sausage ,1,lb,meat
+staple,-,-,-,Cento cherry hots,1,jar,dry
+staple,-,-,-,Swiffer pads,2,unit,cleaning
+staple,-,-,-,frozen vegetables,1,bag,frozen
+staple,-,-,-,freezer zip-lock gallon bags,1,box,other

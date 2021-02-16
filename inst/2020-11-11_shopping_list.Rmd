@@ -1,0 +1,28 @@
+---
+title: "R Notebook"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F)
+```
+
+```{r}
+library(tidyverse)
+
+raw_list <- read_csv('inst/2020-11-11_shopping_list.csv')
+
+shopping_list <- raw_list %>%
+  fill(meal) %>%
+  arrange(meal) %>%
+  select(category, ingredient, amount) %>% 
+  knitr::kable()
+
+shopping_list
+```
+
+

@@ -1,0 +1,60 @@
+---
+title: "Wegmans"
+date: "`r strftime(Sys.Date(), format = '%a, %e %b %Y')`"
+output: html_document
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F)
+```
+
+```{r}
+library(tidyverse)
+library(kableExtra)
+
+staples <- readr::read_csv('inst/shopping_lists/2021-01-26_shopping_list.csv') %>% 
+  dplyr::mutate(source= NA) %>% 
+  dplyr::select(meal_ID, source, dplyr::everything())
+
+#list.files('inst/recipes/', pattern = '.csv', recursive = T, full.names = T)
+
+recipes_for_this_week <- c("inst/recipes/Samin_ragu/Samin_ragu_ingredients.csv",
+  "inst/recipes/Patty_Melts_NYT_cooking/Patty_Melts_NYT_cooking_ingredients.csv",
+  "inst/recipes/Chile_rellenos/Chile_rellenos_ingredients.csv",
+  "inst/recipes//Chicken_with_Lentil_Rice/Chicken_with_Lentil_Rice_ingredients.csv") %>% 
+  map(read_csv) %>% 
+  reduce(rbind)
+  
+  
+
+this_week <- recipes_for_this_week %>% 
+  rbind(staples) %>% 
+  filter_all(any_vars(!is.na(.))) %>% 
+  mutate(department = as_factor(department)) %>% 
+  mutate(department = fct_relevel(department,
+                                  "produce", "bread", "deli", "meat", "dairy", "frozen", "beer/wine/spirits", "hygeine", "canned", "dry", "spices", "other")) %>% 
+  arrange(department, item) %>% 
+  rownames_to_column()%>% 
+  select(rowname, department, meal_ID, quantity, unit, item) %>%
+  arrange(department, item) 
+  
+# this_week %>% 
+#   group_by(department) %>% 
+#   summarise(rowstop = max(rowname))
+
+this_week %>%
+  kbl() %>% 
+  row_spec(1:15, background= "#B0C4DE") %>%
+  row_spec(18, background= "#B0C4DE") %>% 
+  row_spec(25:36, background= "#B0C4DE") %>%
+  row_spec(39:40, background= "#B0C4DE") %>%
+  row_spec(42:44, background= "#B0C4DE") %>%
+  row_spec(61:70, background= "#B0C4DE") %>%
+  row_spec(72, background= "#B0C4DE") %>%
+  kable_styling()
+
+
+```
+

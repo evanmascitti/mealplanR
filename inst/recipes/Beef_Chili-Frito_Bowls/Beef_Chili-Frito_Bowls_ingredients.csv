@@ -1,0 +1,13 @@
+meal_ID,source,tag1,tag2,tag3,item,quantity,unit,department
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,"ground beef, 85% lean",1,lb,meat
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,scallions,6,unit,produce
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,pepper,0.5,tsp,spices
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,chili powder,2,Tbsp,spices
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,garlic,3,cloves,produce
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,cumin,2,tsp,spices
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,pinto beans,2,can,canned
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,enchilada sauce (Frontera Red),1,cup,canned
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,Fritos,4,cup,dry
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,Monterey Jack cheese,4,oz,dairy
+Beef_Chili-Frito_Bowls,"Cook's Country, February/March 2021",weeknight,,,sour cream,1,container,dairy
+,,,,,,,,

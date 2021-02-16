@@ -1,0 +1,51 @@
+---
+title: "Wegmans"
+date: "Monday, 2020-01-11"
+output: html_document
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(message = F,
+                      warning = F,
+                      echo = F)
+```
+
+```{r}
+library(tidyverse)
+library(kableExtra)
+
+staples <- read_csv('inst/shopping_lists/2021-01-05_shopping_list.csv') %>% 
+  mutate(source= NA) %>% 
+  select(meal_ID, source, everything())
+
+this_week <- tibble::tibble(recipe_ID= list.files('inst/atk_recipes/', pattern = '.csv', recursive = T, full.names = T) ) %>% 
+  rownames_to_column() %>% 
+  filter(! rowname %in% c(5, 7)) %>% 
+  mutate(ingredients = map(recipe_ID, read_csv)) %>% 
+  select(ingredients) %>% 
+  as.list() %>% 
+  bind_rows() %>% 
+  rbind(staples) %>% 
+  filter_all(any_vars(!is.na(.))) %>% 
+  mutate(department = as_factor(department)) %>% 
+  mutate(department = fct_relevel(department,
+                                  "produce", "bread", "deli", "meat", "dairy", "refrigerated", "frozen", "beer/wine/spirits", "liquor", "hygeine", "canned", "dry", "spices")) %>% 
+  arrange(department, item) %>% 
+  select(department, meal_ID, quantity, unit, item) %>%
+  arrange(department, item) 
+
+
+# this_week %>% 
+#   group_by(department) %>% 
+#   summarise(n())
+
+this_week %>%
+  kbl() %>% 
+  row_spec(1:20, background= "#B0C4DE") %>%
+  row_spec(23:25, background= "#B0C4DE") %>% 
+  row_spec(29:34, background= "#B0C4DE") %>%
+  kable_styling()
+
+
+```
+
