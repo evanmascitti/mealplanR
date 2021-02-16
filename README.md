@@ -20,7 +20,7 @@ Eventually, I would like to make this into an R package that others
 could use to plan their own meals.
 
 Links to recent shopping lists (must access via [GitHub Pages
-link](https://evanmascitti.github.io/mealplanR/)):
+link](https://evanmascitti.github.io/mealplanR2/)):
 
 Here is an archive of all past lists: <br>
 [2020-11-30](inst/shopping_lists/2020-11-30_shopping_list.html) <br>
@@ -46,4 +46,4 @@ info](./inst/recipes/Chile_rellenos/Chile_rellenos_other_info.md)
 
 ## Recipe links
 
-(coming soon)
+(these will be coming soon)
