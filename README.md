@@ -16,11 +16,12 @@ pre-populate a whole week’s worth of meals and just make the same exact
 shopping list. This would minimize the amount of time and planning I
 need to do when trying to conjure up a week of cooking.
 
-Eventually, I would like to make this into an R package that others
-could use to plan their own meals.
+Currently this is for my own use but I eventually hope to clean it up and 
+put it on CRAN.
 
 Links to recent shopping lists (must access via [GitHub Pages
-link](https://evanmascitti.github.io/mealplanR2/)):
+link](https://evanmascitti.github.io/mealplanR2/)) to view renderd HTML 
+files instead of source code:
 
 Here is an archive of all past lists: <br>
 [2020-11-30](inst/shopping_lists/2020-11-30_shopping_list.html) <br>
