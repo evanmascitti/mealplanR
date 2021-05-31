@@ -20,7 +20,7 @@ Currently this is for my own use but I eventually hope to clean it up and
 put it on CRAN.
 
 Links to recent shopping lists (must access via [GitHub Pages
-link](https://evanmascitti.github.io/mealplanR2/)) to view renderd HTML 
+link](https://evanmascitti.github.io/mealplanR/)) to view renderd HTML 
 files instead of source code:
 
 Here is an archive of all past lists: <br>
